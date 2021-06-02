@@ -1,1 +1,0 @@
-<h1 align="center"> RESTFUL API FOR CHATBOT</h1>
