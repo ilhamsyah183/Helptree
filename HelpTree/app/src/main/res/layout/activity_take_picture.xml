@@ -185,5 +185,6 @@
         app:layout_constraintEnd_toStartOf="@+id/btn_predict"
         app:layout_constraintStart_toEndOf="@+id/btn_select"
         app:layout_constraintTop_toBottomOf="@+id/cardView3"
-        app:srcCompat="@drawable/ic_camera" />
+        app:srcCompat="@drawable/ic_camera"
+        android:contentDescription="@string/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
