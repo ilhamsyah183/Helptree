@@ -1,0 +1,26 @@
+<html>
+<h2>HelpTree-Chatbot API</h2>
+
+<p>Parameter yang digunakan -> query (isi dengan pesan yang ingin dikirimkan)</p>
+<p>Cara menggunakan (langsung menggunakan browser):
+    <b>http://rezkaz.pythonanywhere.com/bot?query=<i>[tulis pesan disini tanpa menggunakan kurung siku]</i></b> (<a href="http://rezkaz.pythonanywhere.com/bot?query=hai">klik disini untuk contoh</a>)</p>
+<p>
+    <b>Note untuk android-dev:</b> Kalo get data json dari Android, coba cari referensi lagi ham mut(kalo ga salah json decode gitu)
+</p>
+<br>
+<p><b>Hasil (bentuk JSON):</b></p>
+<p>
+    <ol><b>user_query</b> -> input/query yang dikirimkan</ol>
+    <ol><b>prediksi_intent</b> -> prediksi intent/class dari input (untuk menentukan respons)</ol>
+    <ol><b>confidence</b> -> bisa dibilang akurasi dari prediksi, makin besar makin bagus</ol>
+    <ol><b>response</b> -> respon/jawaban dari bot yang akan dikirimkan ke user (cukup tampilkan yang ini aja di chatbot)</ol>
+</p>
+<br>
+<p><b>Untuk saat ini hanya bisa memprediksi 3 kelas intent, yaitu:</b></p>
+<p>
+    <ol>rekomendasi_tanaman (contoh query-> saya ingin menanam tanaman)</ol>
+    <ol>salam_pembuka (contoh query-> hai, halo)</ol>
+    <ol>selesai (contoh query-> terima kasih)</ol>
+</p>
+
+</html>
