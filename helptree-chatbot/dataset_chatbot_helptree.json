@@ -1,0 +1,1341 @@
+{"intents":    
+    [
+        {
+            "patterns": [
+                "Hai",
+                "Halo",
+                "Hai admin",
+                "Hai bot",
+                "Halo bot",
+                "Selamat pagi",
+                "Selamat siang",
+                "selamat sore",
+                "selamat malam",
+                "Hai saya ingin bertanya",
+                "Bisa tanya apa saja",
+                "saya mau tanya",
+                "tanya",
+                "minta rekomendasi",
+                "hei",
+                "apa yang bisa kamu lakukan",
+                "kamu bisa melakukan apa saja?",
+                "assalamualaikum",
+                "saya mau bertanya",
+                "saya punya pertanyaan"
+            ],
+            "responses": [
+                "Hai! HelpTree Chatbot siap untuk memberikan info seputar tanaman! Saat ini chatbot ini mampu untuk: - Memberikan informasi penyakit apa aja yang ada pada tiap bagian tumbuhan (akar, batang, buah atau seluruh bagian) dari 12 tanaman* - Merekomendasikan tanaman yang cocok untuk ditanam berdasarkan tingkat curah hujan dan ketinggian lahan - Informasi syarat tumbuh optimal dari 12 tanaman* - Saran dosis pupuk dari 12 tanaman* - Penanganan penyakit dan hama berdasarkan nama penyakit dari 12 tanaman* *Apel, Ceri, Jagung, Anggur, Jeruk, Persik, Paprika, Kentang, Kedelai, Labu, Stroberi, dan Tomat"
+            ],
+            "tag": "greetings"
+        },
+        {
+            "patterns": [
+                "Sehat Ceri",
+                "Sehat Anggur",
+                "Paprika Sehat",
+                "Kentang Sehat",
+                "Kedelai Sehat",
+                "Stoberi Sehat",
+                "Tomat Sehat",
+                "blueberry sehat",
+                "raspberry sehat"
+            ],
+            "responses": [
+                "Agar tanaman dapat terus tumbuh sehat, rutin melakukan pengecekan setiap pagi dan sore hari untuk memantau apakah ada gangguan hama dan"
+            ],
+            "tag": "tanaman_sehat"
+        },
+        {
+            "patterns": [
+                "Kudis Apel"
+            ],
+            "responses": [
+                "Penanganan untuk penyakit kudis apel dapat dilakukan dengan memberikan fungisida pada bagian tanaman yang terinfeksi."
+            ],
+            "tag": "kudis_apel_foto"
+        },
+        {
+            "patterns": [
+                "Busuk Hitam (Rot) Apel"
+            ],
+            "responses": [
+                "Penanganan untuk penyakit busuk hitam dapat dilakukan dengan cara:\n1. Kultur teknis yaitu, tidak memetik buah terlalu masak\n2. Kimiawi yaitu, pencelupan buah dengan Benomyl untuk mencegah penyakit waktu penyimpanan"
+            ],
+            "tag": "busuk_hitam_apel_foto"
+        },
+        {
+            "patterns": [
+                "Karat Apel"
+            ],
+            "responses": [
+                "Penanganan untuk penyakit karat apel dapat dilakukan dengan menyemprot pohon apel dengan fungisida yang bermanfaat untuk mengobati penyakit karat apel dan mencegah infeksi jamur lainnya."
+            ],
+            "tag": "karat_apel_foto"
+        },
+        {
+            "patterns": [
+                "Embun Tepung Apel"
+            ],
+            "responses": [
+                "Penangan untuk penyakit embun tepung dapat dilakukan dengan cara:\n1. Mekanis yaitu, memotong tunas atau bagian yang sakit dan dibakar.\n2. Kimiawi yaitu, disemprot dengan fungisida Nimrod 250 EC atau Afugan 300 EC setelah perompesan sampai tunas berumur 4-5 minggu dengan interval 5-7 hari."
+            ],
+            "tag": "embun_tepung_apel"
+        },
+        {
+            "patterns": [
+                "Kutu Hijau Apel"
+            ],
+            "responses": [
+                "Penanganan untuk hama kutu hijau bisa dilakukan dengan cara disemprot dengan insektisida berbahan aktif metidation (Supracide 40 EC) dosis 2 cc/liter air atau 1-1,6 liter, atau Supracide 40 EC dalam 500-800 liter/ha air dengan interval penyemprotan 2 minggu sekali, atau insektisida dengan bahan aktif Imidakloprid (Convidor 200 SL) dosis 0,125-0,250 cc/liter air; atau Convidor 200 SL dalam 600 liter/ha air dengan interval penyemprotan 10 hari sekali. Convidor dapat mematikan sampai telur-telurnya dengan cara penyemprotan dari atas ke bawah, penyemprotan dilakukan 1-2 minggu sebelum pembungaan dan dilanjutkan 1-1,5 bulan."
+            ],
+            "tag": "kutu hijau apel"
+        },
+        {
+            "patterns": [
+                "Bercak Daun Apel"
+            ],
+            "responses": [
+                "Penanganan penyakit bercak daun dapat dilakukan dengan cara : \n1. Kultur teknis/mekanis yaitu, jarak tanam tidak terlalu rapat, bagian tanaman yang diserang dipotong dan dibakar. \n2. Kimiawi yaitu, disemprot dengan fungusida Agrisan 60 WP sejak 10 hari setelah perompesan sebanyak 10 kali dengan interval 1 minggu atau disemprot dengan Delseme MX 200 atau henlate sejak umur 4 hari setelah perompesan selama 4 minggu dengan interval 7 hari."
+            ],
+            "tag": "bercak daun apel"
+        },
+        {
+            "patterns": [
+                "Penyakit Kanker Batang Apel"
+            ],
+            "responses": [
+                "Penanganan penyakit kanker dapat dilakukan dengan cara : \n1. Kultur teknis/mekanis yaitu, tidak memanen buah terlalu masak, mengurangi kelembaban kebun, membuang bagian tanaman yang sakit. \n2. Kimiawi yaitu pengerokan batang yang sakit kemudian diolesi fungisida Difolatan 4 F atau Copper Sandoz, atau disemprot dengan Benomyl atau Antracol 70 WP."
+            ],
+            "tag": "penyakit kanker batang apel"
+        },
+        {
+            "patterns": [
+                "Busuk Akar Apel"
+            ],
+            "responses": [
+                "Penanganan penyakit busuk akar dapat dilakukan dengan cara membongkar/mencabut tanaman yang terserang beserta akar-akarnya dan bekas lubang tidak ditanami minimun selama 1 tahun."
+            ],
+            "tag": "busuk akar apel"
+        },
+        {
+            "patterns": [
+                "Tungau Apel"
+            ],
+            "responses": [
+                "Penanganan hama tungau dapat dilakukan dengan cara :\n1. Biologis yaitu, dengan musuh alami (Coccinellidae lycosa). \n2. Kimiawi yaitu, disemprot dengan insektisida akarisidia Omite 570 EC penyemprotan Akarisida Omite 570 EC sebanyak 2 cc/liter air atau 1 liter Akarisida Omite 570 EC dalam 500 liter air per hektar dengan interval 2 minggu."
+            ],
+            "tag": "tungau apel"
+        },
+        {
+            "patterns": [
+                "Trips Apel"
+            ],
+            "responses": [
+                "Penanganan hama trips dapat dilakukan dengan cara :\n1. Mekanis membuang telur hama pada daun dan menjaga tajuk tanaman tidak terlalu rapat. \n2. Kimiawi dengan disemprot insektisida berbahan aktif methomyl seperti Lannate 25 WP dengan dosis 2 cc/liter air atau insektisida dengan bahan aktif seperti atau Lebaycid 550 EC dengan dosis 2 cc/liter air pada sat tanaman sedang bertunas, berbunga, dan pembentukan buah."
+            ],
+            "tag": "trips apel"
+        },
+        {
+            "patterns": [
+                "Ulat Daun Apel"
+            ],
+            "responses": [
+                "Penanganan hama ulat daun dapat dilakukan dengan cara :\n1. Mekanis membuang telur hama pada daun. \n2. Kimiawi dengan disemprot insektisida berbahan aktif metamidofos seperti Tamaron 200 LC atau insektisida dengan bahan aktif monocrotofos seperti Nuvacron 20 SCW."
+            ],
+            "tag": "ulat daun apel"
+        },
+        {
+            "patterns": [
+                "Serangga Penghisap Daun Apel"
+            ],
+            "responses": [
+                "Penanganan hama serangga penghisap daun dapat dilakukan dengan cara :\n1. Mekanis pengerodongan dengan atap plastik atau pemberongsongan buah. \n2. Kimiawi dengan disemprot insektisida berbahan aktif metomyl seperti Lannate 25 WP atau insektisidan dengan bahan aktif BPMC seperti Baycarb 500 EC; penyemprotan dilakukan pada pagi atau sore hari."
+            ],
+            "tag": "serangga penghisap daun apel"
+        },
+        {
+            "patterns": [
+                "Ulat Daun Hitam Apel"
+            ],
+            "responses": [
+                "Penanganan hama ulat daun hitam dapat dilakukan dengan cara :\n1. Mekanis dengan membuang telur hama yang biasanya diletakkan pada daun.\n2. Kimiawi dengan disemprot insektisida berbahan aktif monocrotofos seperti: Nuvacron 20 SCW dan Matador 25 EC."
+            ],
+            "tag": "ulat daun hitam apel"
+        },
+        {
+            "patterns": [
+                "Lalat Buah Apel"
+            ],
+            "responses": [
+                "Penanganan hama lalat buah dapat dilakukan dengan cara membuat perangkap lalat jantan, menggunakan methyl eugenol (0,1 cc) yang diteteskan pada kapas yang sudah ditetesi insektisida (2 cc), kapas kemudian dimasukkan kedalam botol plastik bekas air mineral dan digantung setinggi 2 m, karena aroma yang mirip bau-bauan yang dikelurkan lalat betina, maka lalat jantan tertarik dan menghisap kapas tersebut atau disemprot dengan insektisida kontak seperti lebacyd 550 EC."
+            ],
+            "tag": "lalat buah apel"
+        },
+        {
+            "patterns": [
+                "Embun Tepung Ceri"
+            ],
+            "responses": [
+                "Penanganan penyakit embun tepung ceri bisa dilakukan dengan memberikan fungisida pada bagian yang terinfeksi."
+            ],
+            "tag": "embun tepung ceri"
+        },
+        {
+            "patterns": [
+                "Busuk Hitam (Rot) Anggur Hitam"
+            ],
+            "responses": [
+                "Penanganan penyakit busuk hitam (rot) anggur hitam bisa dilakukan dengan cara memberikan fungisida. Akan tetapi, jangan memberikan fungsida pada anggur jika tidak ada label \"For use on grapes\" ."
+            ],
+            "tag": "busuk hitam (rot) anggur hitam"
+        },
+        {
+            "patterns": [
+                "Jamur Esca Anggur"
+            ],
+            "responses": [
+                "Penanganan jamur esca anggur bisa dilakukan dengan cara merendam cangkokan yang tidak aktif selama 30 menit dalam air panas sekitar 50\u00b0C. Atau bisa juga dengan melakukan praktik pencegahan yaitu sebelum melakukan pengcangkokan, tanaman merambat dapat ditanam ke dalam lilin khusus yang mengandung zat pengatur pertumbuhan tanaman atau formulasi yang mengandung fungisida."
+            ],
+            "tag": "jamur esca anggur"
+        },
+        {
+            "patterns": [
+                "Hawar Daun Anggur"
+            ],
+            "responses": [
+                "Penanganan hawar daun anggur dapat dilakukan dengan cara pemberian fungisida yang disemprotkan dapat membantu mengurangi penyakit ini."
+            ],
+            "tag": "hawar daun anggur"
+        },
+        {
+            "patterns": [
+                "Embun Tepung Anggur"
+            ],
+            "responses": [
+                "Penanganan embun tepung bisa dilakukan dengan dua cara yaitu penanganan secara mekanik dengan cara membuang semua daun yang terinfeksi dan kemudian dibuang jauh dari area pohon atau dibakar."
+            ],
+            "tag": "embun tepung anggur"
+        },
+        {
+            "patterns": [
+                "Tepung Palsu Anggur"
+            ],
+            "responses": [
+                "Penanganan penyakit tepung palsu dapat dilakukan dengan cara mengurangi kelembaban kebu (dipangkas), potong dam musnahkan tanaman terserang, dan pasang naungan."
+            ],
+            "tag": "tepung palsu anggur"
+        },
+        {
+            "patterns": [
+                "Kudis anggur"
+            ],
+            "responses": [
+                "Penanganan penyakit kudis dapat dilakukan dengan cara memangkas bagian yang sakit dan sanitasi kebun."
+            ],
+            "tag": "kudis anggur"
+        },
+        {
+            "patterns": [
+                "Busuk Kapang Kelabu Anggur"
+            ],
+            "responses": [
+                "Penanganan penyakit busuk kapang kelabu dapat dilakukan dengan cara penanganan panen dan pasca panen yang baik."
+            ],
+            "tag": "busuk kapang kelabu anggur"
+        },
+        {
+            "patterns": [
+                "Penghijauan Jeruk"
+            ],
+            "responses": [
+                "Hingga saat ini belum ada penanganan yang tepat untuk penyakit penghijauan jeruk. Namun untuk pencegahannya bisa dilakukan dengan cara membuang segera pohon yang terserang penyakit ini, buang inang alternatif kutu loncat jeruk (plisid) seperti Murraya paniculata, Severinia buxifolia dan tanaman lain dalam famili yang sama dengn jeruk (Rutaceae)."
+            ],
+            "tag": "penghijauan jeruk"
+        },
+        {
+            "patterns": [
+                "Blendok Jeruk"
+            ],
+            "responses": [
+                "Penanganan penyakit blendok dapat dilakukan dengan cara :\n1. Kultur teknis yaitu mengurangi kelembaban kebun dengan mengatur jarak tanam atau dilakukan pemangkasan. \n2. Mekanis yaitu memotong cabang/ranting terinfeksi, termasuk 1-2 cm dengan kulit di sekitarnya yang sehat, bekas potongan diberi karbolineum, parafin, fungisida Cu atau ter.\n3. Biologis, menggunakan agen antagonis Trichoderma spp, Gliocladium spp, Pseudomonas fluorescens dan Bacillus subtilis yang dicampur dengan pupuk organik.\n4. Kimiawi yaitu dengan mengoleskan bubur california pada bagian batang/ranting yang sakit setelah dibersihkan."
+            ],
+            "tag": "blendok jeruk"
+        },
+        {
+            "patterns": [
+                "Embun Tepung Jeruk"
+            ],
+            "responses": [
+                "Penanganan penyakit embun tepung dapat dilakukan dengan cara penyemprotan/penghembusan dengan tepung belerang. Penyemprotan dengan bubur california (1:30) untuk daerah yang lokasi cukup tinggi, penyemprotan fungisida pyrazophos (Afugan), bupirimate (Nimrot 25 EC), dinocap dan dithiocarbamate."
+            ],
+            "tag": "embun tepung jeruk"
+        },
+        {
+            "patterns": [
+                "Kudis Jeruk"
+            ],
+            "responses": [
+                "Penanganan penyakit kudis dapat dilakukan dengan cara :\n1. Kultur teknis, pengairan dilakukan 3 bulan sebelum datangnya musim hujan agar tanaman segera berbunga sehingga pada permulaan musim hujan buah sudah agak besar yang cukup tahan terhadap kudis. \n2. Mekanis, pemangkasan wiwilan batang bawah secara teratur.\n3. Kimiawi, penyemprotan fungisida dithiocarbamate atau benomyl (Benlate)."
+            ],
+            "tag": "kudis jeruk"
+        },
+        {
+            "patterns": [
+                "Busuk buah Jeruk"
+            ],
+            "responses": [
+                "Penanganan penyakit busuk buah dapat dilakukan dengan cara :\n1. Mekanisme yaitu menghindari kerusakan mekanis pada saat panen dan pengepakan.\n2. Kimiawi yaitu pencelupan buah ke dalam air panas, fungisida benomyl, pelilinan buah setelah panen."
+            ],
+            "tag": "busuk buah jeruk"
+        },
+        {
+            "patterns": [
+                "Busuk Akar dan Pangkal Batang Jeruk"
+            ],
+            "responses": [
+                "Penanganan penyakit busuk akar dan pangkal batang dapat dilakukan dengan cara :\n1. Kultur teknis yaitu mengurangi kelembaban kebun dengan mengatur drainase, jarak tanam, pemangkasan dan sanitasi lingkungan kebun.\n2. Mekanis yaitu pemotongan bagian yang sakit termasuk 1-3 cm bagian kulit sekitarnya yang sehat, kemudian diolesi fungisida.\n3. Biologis yaitu menggunakan agen antagonis Trichoderma spp, Gliocladium sp yang dicampur dengan pupuk organik.\n4. Genetis, menggunakan batang bawah yang tahan terhadap penyakit ini, seperti jeruk masam.\n5. Kimiawi, yaitu dengan pelaburan dan penyemprotan bubur california, minimal 2 kali/tahun."
+            ],
+            "tag": "busuk akar dan pangkal batang jeruk"
+        },
+        {
+            "patterns": [
+                "Penyakit Persik Palsu Persik"
+            ],
+            "responses": [
+                "Untuk saat ini kami masih belum menemukan penanganan yang tepat untuk penyakit persik palsu. Salah satu tindakan pencegahan yang disarankan adalah menghindari masuknya bakteri di kebun baru."
+            ],
+            "tag": "penyakit persik palsu persik"
+        },
+        {
+            "patterns": [
+                "Keropeng Persik"
+            ],
+            "responses": [
+                "Penanganan penyakit keropeng persik dapat dilakukan dengan pemberian fungisida yang mengandung captan, chlorothalonil, dan beberapa fungisida lainnya. Pemberian chlorothalonil harus tepat, mulai dari tanda-tanda pertama penyakit dan penyemprotan yang diperbarui setiap dua minggu."
+            ],
+            "tag": "keropeng persik"
+        },
+        {
+            "patterns": [
+                "Kanker Ranting Persik"
+            ],
+            "responses": [
+                "Penanganan penyakit kanker ranting persik dapat dilakukan dengan menyemprotkan senyawa tembaga jika penyakit sudah terdeteksi."
+            ],
+            "tag": "kanker ranting persik"
+        },
+        {
+            "patterns": [
+                "Bintik Bakteri Persik"
+            ],
+            "responses": [
+                "Penanganan bintik bakteri persik dapat dilakukan dengan melakukan tindakan pencegahan dan perawatan kimia untuk mengurangi kejadiannya. Semprotan berbahan dasar tembaga sendiri atau bersama dengan antibiotik dapat digunakan secara preventif dengan khasiat sedang. Dosis harus dikurangi secara bertahap untuk menghindari kerusakan daun."
+            ],
+            "tag": "bintik bakteri persik"
+        },
+        {
+            "patterns": [
+                "Bintik Bakteri Paprika"
+            ],
+            "responses": [
+                "Penanganan bintik bakteri paprika bisa dilakukan dengan cara penyemprotan bakterisida dan fungisida yang sesuai dengan penyakit sasaran. Beberapa jenis fungisida yang bisa digunakan untuk mengendalikan penyakit pada tanaman paprika antara lain ; antracol, daconil, amistartop, bion-m, cozeb dan lain-lain."
+            ],
+            "tag": "bintik bakteri paprika"
+        },
+        {
+            "patterns": [
+                "Penyakit Bercak Daun Serkospora Paprika"
+            ],
+            "responses": [
+                "Penanganan penyakit bercak daun serkospora dapat dilakukan dengan cara mengendalikan jarak tanam dan pengaplikasian fungisida yang direkomendasikan."
+            ],
+            "tag": "penyakit bercak daun serkospora paprika"
+        },
+        {
+            "patterns": [
+                "Bercak Kering Kentang"
+            ],
+            "responses": [
+                "Penanganan penyakit bercak kering dapat dilakukan dengan menggunakan batu kapur alga, campuran susu bebas lemak dan air (1:1) atau tepung batu untuk mengobati tanaman yang terinfeksi. Atau bisa dengan larutan 3 sdt soda bikarbonat + emulsi ikan dalam 4 liter air juga dapat membantu. Selain itu, pemberian produk berbahan dasar Bacillus subtilis atau fungisida juga bisa berfungsi dengan baik."
+            ],
+            "tag": "bercak kering kentang"
+        },
+        {
+            "patterns": [
+                "Hawar Daun Kentang"
+            ],
+            "responses": [
+                "Penanganan penyakit hawar daun kentang dapat dilakukan dengan memberikan fungisida berbasis tembaga sebelum cuaca kering. Semprotkan daun dengan agen pelapis organik juga dapat mencegah infeksi."
+            ],
+            "tag": "hawar daun kentang"
+        },
+        {
+            "patterns": [
+                "Busuk Umbi Kentang"
+            ],
+            "responses": [
+                "Penanganan penyakit busuk umbi dapat dilakukan dengan cara pergiliran tanaman , sanitasi kebun dan penggunaan bibit yang baik. Pencegahan dengan penggunaan Natural Glio pada sebelum atau awal tanam."
+            ],
+            "tag": "busuk umbi kentang"
+        },
+        {
+            "patterns": [
+                "Penyakit Busuk Rhizoctonia"
+            ],
+            "responses": [
+                "Penanganan penyakit busuk rhizoctonia dapat dilakukan dengan eradikasi dan sanitasi lingkungan, sebab di lapangan jamur ini memiliki aneka jenis inang dan juga dapat bertahan hidup lama di tanah dan residu tanaman sakit."
+            ],
+            "tag": "penyakit busuk rhizoctonia"
+        },
+        {
+            "patterns": [
+                "Penyakit Kerdil Kedelai"
+            ],
+            "responses": [
+                "Penanganan penyakit kerdil dapat dilakukan dengan cara :\n1. Penanaman varietas kedelai yang tahan terhadap serangan Aphis sp.\n2. Penyemprotan pestisida yang sesuai anjuran.\n3. Memusnahkan tanaman yang terinfeksi."
+            ],
+            "tag": "penyakit kerdil kedelai"
+        },
+        {
+            "patterns": [
+                "Embun Tepung Labu"
+            ],
+            "responses": [
+                "Penanganan penyakit embun tepung labu dapat dilakukan dengan cara tanaman yang sakit parah dicabut dan dipendam untuk mengurangi sumber infeksi. Pengendalian gulam yang menjadi tumbuhan inang, penyemprotan dinokap atau penyerbukan belirang, atau menggunakan pestisida."
+            ],
+            "tag": "embun tepung labu"
+        },
+        {
+            "patterns": [
+                "Scorch (terbakar/gosong) Stroberi"
+            ],
+            "responses": [
+                "Penanganan penyakit scorch (terbakar/gosong) stroberi dapat dilakukan dengan cara sanitasi kebun dengan baik. Ini termasuk penyingkiran serpihan kebun yang dijangkiti dari tambalan stroberi dan juga pemindahan \u2013 pemindahan stroberi yang baru."
+            ],
+            "tag": "scorch (terbakar/gosong) stroberi"
+        },
+        {
+            "patterns": [
+                "Empulur Merah"
+            ],
+            "responses": [
+                "Penanganan penyakit empulur merah dapat dilakukan dengan cara :\n1. Membongkar tanaman yang serang dan memisahkannya dari tanaman lainnya.\n2. Penyemprotan fungisida jika gejala awal sudah tampak."
+            ],
+            "tag": "empulur merah"
+        },
+        {
+            "patterns": [
+                "Kapang Kelabu"
+            ],
+            "responses": [
+                "Penanganan penyakit kapang kelabu dapat dilakukan dengan cara sanitasi lahan. Pemberian pestisida berbahan aktif seperti thiram, iprodione, atau captan dianjurkan untuk disemprotkan jika terjadi serangan."
+            ],
+            "tag": "kapang kelabu"
+        },
+        {
+            "patterns": [
+                "Busuk Buah Matang"
+            ],
+            "responses": [
+                "Penanganan penyakit busuk buah matang dapat dilakukan dengan cara membuang buahnya terutama yang telah terserang. Kemudian menyemrotkan dengan menggunakan fungisida yang berbahan aktif tembaga. Contohnya yaitu Kocide 80 As, Funguran 82 WP atau Cupravit ) OB 21."
+            ],
+            "tag": "busuk buah matang"
+        },
+        {
+            "patterns": [
+                "Bintik Bakteri Tomat"
+            ],
+            "responses": [
+                "Penanganan bintik bakteri tomat dapat dilakukan dengan menghancurkan seluruh tanaman jika penyakit terjadi pada awal musim. Atau bisa juga dengan memberikan bakterisida yang mengandung tembaga agar memberikan lapisan pelindung pada daun dan buah."
+            ],
+            "tag": "bintik bakteri tomat"
+        },
+        {
+            "patterns": [
+                "Bercak Kering Tomat"
+            ],
+            "responses": [
+                "Penanganan untuk penyakit yang disebabkan oleh cendawan ini pertama-tama adalah mencabut dan memusnahkan tanaman tomat yang terserang. Sedangkan untuk pencegahan bisa dilakukan dengan cara menggunakan benih yang resistan dan bersertifikat. Kemudian jaga supaya sirkulasi udara di lahan tetap terjaga dengan cara membersihkan lahan dari gulma, lakukan juga pemangkasan pada cabang air yang terlalu rimbun."
+            ],
+            "tag": "bercak kering tomat"
+        },
+        {
+            "patterns": [
+                "Hawar Daun Tomat"
+            ],
+            "responses": [
+                "Penanganan penyakit hawar daun pada tomat dapat dilakukan dengan menggunakan fungisida yang ramah lingkungan menjadi alternatif pengendalian penyakit hawar daun, salah satunya adalah dengan menggunakan NPS."
+            ],
+            "tag": "hawar daun tomat"
+        },
+        {
+            "patterns": [
+                "Bercak Daun Tomat"
+            ],
+            "responses": [
+                "Penanganan penyakit bercak daun pada tomat dapat dilakukan dengan melakukan perawatan benih dengan air panas (25 menit pada 50\u00b0) untuk menghindari patogen pada biji. Jamur Acremonium strictum, Dicyma pulvinata, Trichoderma harzianum atau T. Viride dan Trichothecium roseum bersifat antagonis terhadap M. Fulva dan dapat digunakan untuk mengurangi penyebarannya."
+            ],
+            "tag": "bercak daun tomat"
+        },
+        {
+            "patterns": [
+                "Bercak Daun Septoria Tomat"
+            ],
+            "responses": [
+                "Penanganan penyakit bercak daun septoria tomat dapat dilakukan dengan cara memberikan fungisida berbahan dasar tembaga, seperti campuran Bordeaux, tembaga hidroksida, tembaga sulfat, atau tembaga oksiklorida sulfat dapat membantu mengendalikan patogen. Terapkan pada selang waktu 7 hingga 10 hari sepanjang akhir musim. Patuhi batasan penggunaannya selama masa panen yang tercantum pada label pestisida."
+            ],
+            "tag": "bercak daun septoria tomat"
+        },
+        {
+            "patterns": [
+                "Tungau Laba-Laba Tomat"
+            ],
+            "responses": [
+                "Penanganan tungau laba-laba dapat dilakukan dengan cukup membersihkan tungau dan buang daun yang terserang. Siapkan bahan olahan yang terdiri dari biji rapa, selasih, kedelai dan minyak nimba untuk menyemprot daun secara menyeluruh dan mengurangi populasi T. Urticae."
+            ],
+            "tag": "tungau laba-laba tomat"
+        },
+        {
+            "patterns": [
+                "Bercak Daun (Target Spot) Tomat"
+            ],
+            "responses": [
+                "Penanganan bercak daun (target spot) dapat dilakukan dengan cara memberikan campuran piraklostrobin, epoksikonazol dan fluksapiroksad atau biksafen, protioconazol dan trifloksistrobin dapat membantu mengendalikan jamur."
+            ],
+            "tag": "bercak daun (target spot) tomat"
+        },
+        {
+            "patterns": [
+                "Virus Kuning Keriting Daun Tomat"
+            ],
+            "responses": [
+                "Untuk saat ini kami tidak mengetahui pengobatan terhadap virus kuning keriting daun tomat. Namun bisa dicoba menggunakan insektisida dari keluarga piretroid yang diterapkan pada tanah basah atau penyemprotan selama tahap pembibitan dapat mengurangi populasi lalat putih."
+            ],
+            "tag": "virus kuning keriting daun tomat"
+        },
+        {
+            "patterns": [
+                "Virus Mosaik Tomat"
+            ],
+            "responses": [
+                "Penanganan virus mosaik tomat dapat dilakukan dengan segera mencabut dan memusnahkan tanaman yang menunjukkan gejala agar tidak menular ke tanaman yang sehat. Melakukan immunisasi tanaman tomat dengan virus CMV yang dilemahkan dengan satelit virus CARNA-5 (Cucumber Mosaic Virus Assosiated RNA-5) dapat menahan serangan CMV yang lebih ganas di lapangan."
+            ],
+            "tag": "virus mosaik tomat"
+        },
+        {
+            "patterns": [
+                "apel",
+                "Apa syarat tanam apel agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman apel",
+                "ketinggian lahan yang cocok dan tepat untuk menanam apel",
+                "curah hujan yang pas untuk pohon apel",
+                "suhu daerah yang baik untuk menanam apel",
+                "kondisi yang cocok untuk tumbuhan apel",
+                "syarat untuk bisa menanam apel",
+                "apa saja kondisi yang mendukung menanam apel",
+                "dimana saya dapat menanam apel ?",
+                "kondisi yang memenuhi syarat menanam apel",
+                "tanah yang cocok untuk menanam apel",
+                "ketinggian yang sesuai untuk menanam apel",
+                "pada iklim apa apel cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam apel",
+                "pada ketinggian berapa tanaman apel dapat tumbuh"
+            ],
+            "responses": [
+                "Berikut ini adalah syarat tumbuh dari tanaman apel: Iklim. Curah hujan berkisar antara 1.000-2.600 mm/tahun dengan hari hujan 110-150 hari/tahun. Bulan basah 6-7 bulan/tahun dan bulan kering 3-4 bulan/tahun. Suhu yang sesuai berkisar antara 16-27 derajat C, dan kelembaban 75-85%. Ketinggian Tempat. Apel dapat tumbuh dan berbuah dengan baik pada ketinggian 700-1.200 mdpl dengan ketinggian optimal 1.000-1.200 mdpl. Tanah. Derajat keasaman tanah (pH) yang cocok untuk pertumbuhan apel antara 6-7 dan jenis tanah yaitu Latosol, Andosol dan Regosol. Jika pH tanah < 6, maka dapat dilakukan pengapuran. Tanaman apel tumbuh dengan baik pada tanah dengan solum dalam, struktur tanah gembur dan kandungan bahan organik tinggi."
+            ],
+            "tag": "syarat_tanam_apel"
+        },
+        {
+            "patterns": [
+                "ceri",
+                "Apa syarat tanam ceri agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman ceri",
+                "ketinggian lahan yang cocok dan tepat untuk menanam ceri",
+                "curah hujan yang pas untuk pohon ceri",
+                "suhu daerah yang baik untuk menanam ceri",
+                "kondisi yang cocok untuk tumbuhan ceri",
+                "syarat untuk bisa menanam ceri",
+                "apa saja kondisi yang mendukung menanam ceri",
+                "dimana saya dapat menanam ceri ?",
+                "kondisi yang memenuhi syarat menanam ceri",
+                "tanah yang cocok untuk menanam ceri",
+                "ketinggian yang sesuai untuk menanam ceri",
+                "pada iklim apa ceri cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam ceri",
+                "pada ketinggian berapa tanaman ceri dapat tumbuh"
+            ],
+            "responses": [
+                "Iklim Tanaman ceri merupakan tanaman yang tumbuh di tempat dingin. Tanaman ceri dapat tumbuh di tempat yang memiliki iklim sedang. Tanaman cherry biasanya ditanam pada musim gugur dan mulai bersemi pada musim semi dengan puncak panen pada musim panas.Tanaman ceri memang hanya bisa tumbuh di tempat beriklim sedang atau dingin. Namun, tanaman ini tak dapat tumbuh pada tempat yang memiliki suhu rendah dibawah -1\u00b0C. Ketinggian tempat Sebagai tanaman yang membutuhkan suhu dingin agar dapat tumbuh, tanaman ceri akan dapat tumbuh dengan maksimal bila ditanam di dataran tinggi dengan ketinggian diatas 700 mdpl. Tanah Tanah yang digunakan untuk menanam tanaman cherry merupakan tanah berpasir kering yang memiliki perairan yang baik serta kesuburan sedang dan terletak di area yang disinari oleh matahari. Hindari menanam tanaman ceri pada tanah yang padat karena akan menyebabkan akar dari tanaman ceri membusuk."
+            ],
+            "tag": "syarat_tanam_ceri"
+        },
+        {
+            "patterns": [
+                "jagung",
+                "Apa syarat tanam jagung agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman jagung",
+                "ketinggian lahan yang cocok dan tepat untuk menanam jagung",
+                "curah hujan yang pas untuk pohon jagung",
+                "suhu daerah yang baik untuk menanam jagung",
+                "kondisi yang cocok untuk tumbuhan jagung",
+                "syarat untuk bisa menanam jagung",
+                "apa saja kondisi yang mendukung menanam jagung",
+                "dimana saya dapat menanam jagung ?",
+                "kondisi yang memenuhi syarat menanam jagung",
+                "tanah yang cocok untuk menanam jagung",
+                "ketinggian yang sesuai untuk menanam jagung",
+                "pada iklim apa jagung cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam jagung",
+                "pada ketinggian berapa tanaman jagung dapat tumbuh"
+            ],
+            "responses": [
+                "Iklim yang dikehendaki oleh sebagian besar tanaman jagung adalah daerah yang beriklim sedang hingga daerah beriklim sub-tropis/tropis yang basah. Pada lahan yang tidak beririgasi, pertumbuhan tanaman ini memerlukan curah hujan ideal sekitar 85-200 mm/bulan dan harus merata. Suhu yang dikehendaki tanaman jagung antara 21-34\u00ba C, akan tetapi bagi pertumbuhan tanaman yang ideal memerlukan suhu optimum antara 23-27 derajat C. Pada proses perkecambahan benih jagung memerlukan suhu yang cocok sekitar 30\u00ba C."
+            ],
+            "tag": "syarat_tanam_jagung"
+        },
+        {
+            "patterns": [
+                "anggur",
+                "Apa syarat tanam anggur agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman anggur",
+                "ketinggian lahan yang cocok dan tepat untuk menanam anggur",
+                "curah hujan yang pas untuk pohon anggur",
+                "suhu daerah yang baik untuk menanam anggur",
+                "kondisi yang cocok untuk tumbuhan anggur",
+                "syarat untuk bisa menanam anggur",
+                "apa saja kondisi yang mendukung menanam anggur",
+                "dimana saya dapat menanam anggur ?",
+                "kondisi yang memenuhi syarat menanam anggur",
+                "tanah yang cocok untuk menanam anggur",
+                "ketinggian yang sesuai untuk menanam anggur",
+                "pada iklim apa anggur cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam anggur",
+                "pada ketinggian berapa tanaman anggur dapat tumbuh"
+            ],
+            "responses": [
+                "Tanaman anggur dapat tumbuh di ketinggian 25-300 m dpl, dengan suhu 25 \u2013 31\u00b0C. Dengan curah hujan 800 mm/tahun. Tipe tanah yang digunakan adalah tanah liat dan tanah liat berpasir."
+            ],
+            "tag": "syarat_tanam_anggur"
+        },
+        {
+            "patterns": [
+                "jeruk",
+                "Apa syarat tanam jeruk agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman jeruk",
+                "ketinggian lahan yang cocok dan tepat untuk menanam jeruk",
+                "curah hujan yang pas untuk pohon jeruk",
+                "suhu daerah yang baik untuk menanam jeruk",
+                "kondisi yang cocok untuk tumbuhan jeruk",
+                "syarat untuk bisa menanam jeruk",
+                "apa saja kondisi yang mendukung menanam jeruk",
+                "dimana saya dapat menanam jeruk ?",
+                "kondisi yang memenuhi syarat menanam jeruk",
+                "tanah yang cocok untuk menanam jeruk",
+                "ketinggian yang sesuai untuk menanam jeruk",
+                "pada iklim apa jeruk cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam jeruk",
+                "pada ketinggian berapa tanaman jeruk dapat tumbuh"
+            ],
+            "responses": [
+                "Iklim. \n- Tanaman jeruk memerlukan 6 - 9 bulan basah (musim hujan), curah hujan 1000-2000 mm/th merata sepanjang tahun. Bulan basah ini diperlukan untuk perkembangan bunga dan buah agar tanahnya tetap lembab. Di Indonesia tanaman ini sangat memerlukan air yang cukup terutama di bulan Juli - Agustus. \n- Temperatur optimal antara 25 - 30\u00ba C namun ada yang masih dapat tumbuh normal pada 38\u00baC. \n- Tanaman jeruk tidak menyukai tempat yang terlindung dari sinar matahari, karena pertumbuhannya kurang baik dan mudah terserang penyakit. \n- Kelembaban optimum untuk pertumbuhan tanaman ini sekitar 70-80%. \n\nKetinggian Tempat. \nTinggi tempat untuk budidaya tanaman jeruk antara 1-1.200 m dpl. \n\nTanah. \n- Tanah yang baik adalah lempung sampai lempung berpasir, cukup humus, tata air dan udara baik. \n- Jenis tanah Andosol dan Latosol sangat cocok untuk budidaya jeruk. \n- Derajat keasaman tanah (pH tanah) yang cocok untuk budidaya jeruk adalah 5,5\u20136,5 dengan pH optimum 6. \n- Air tanah yang optimal berada pada kedalaman 150\u2013200 cm di bawah permukaan tanah. Pada musim kemarau 150 cm dan pada musim hujan 50 cm. Tanaman jeruk menyukai air yang mengandung garam sekitar 10%. \n- Drainase lahan harus baik karena tanaman jeruk tidak tahan genangan."
+            ],
+            "tag": "syarat_tanam_jeruk"
+        },
+        {
+            "patterns": [
+                "persik",
+                "Apa syarat tanam persik agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman persik",
+                "ketinggian lahan yang cocok dan tepat untuk menanam persik",
+                "curah hujan yang pas untuk pohon persik",
+                "suhu daerah yang baik untuk menanam persik",
+                "kondisi yang cocok untuk tumbuhan persik",
+                "syarat untuk bisa menanam persik",
+                "apa saja kondisi yang mendukung menanam persik",
+                "dimana saya dapat menanam persik ?",
+                "kondisi yang memenuhi syarat menanam persik",
+                "tanah yang cocok untuk menanam persik",
+                "ketinggian yang sesuai untuk menanam persik",
+                "pada iklim apa persik cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam persik",
+                "pada ketinggian berapa tanaman persik dapat tumbuh"
+            ],
+            "responses": [
+                "Buah ini akan tumbuh dengan baik jika ditanam di daerah yang memiliki keadaan tanah kering atau di dataran rendah. Namun, bukan berarti budidaya buah persik tidak dapat dilakukan di dataran tinggi. Yang terpenting adalah perawatannya yang harus dikontrol secara rutin, serta mendapatkan sinar maahari yang cukup. \n\nSelain itu, hindari juga daerah-daerah yang posisinya rendah dan mudah tergenang oleh air. Ini karena hal tersebut dapat menghancurkan buah persik. Cara yang terbaik saat menanam adalah memilih pohon yang usianya sudah satu tahun atau lebih. Selain itu, lakukanan penanaman pada saat cuaca hangat."
+            ],
+            "tag": "syarat_tanam_persik"
+        },
+        {
+            "patterns": [
+                "paprika",
+                "Apa syarat tanam paprika agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman paprika",
+                "ketinggian lahan yang cocok dan tepat untuk menanam paprika",
+                "curah hujan yang pas untuk pohon paprika",
+                "suhu daerah yang baik untuk menanam paprika",
+                "kondisi yang cocok untuk tumbuhan paprika",
+                "syarat untuk bisa menanam paprika",
+                "apa saja kondisi yang mendukung menanam paprika",
+                "dimana saya dapat menanam paprika ?",
+                "kondisi yang memenuhi syarat menanam paprika",
+                "tanah yang cocok untuk menanam paprika",
+                "ketinggian yang sesuai untuk menanam paprika",
+                "pada iklim apa paprika cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam paprika",
+                "pada ketinggian berapa tanaman paprika dapat tumbuh"
+            ],
+            "responses": [
+                "Tanaman paprika membutuhkan tempat dengan kelembapan udara sekitar 80% agar dapat tumbuh. suhu udara yang sesuai untuk tanaman paprika agar dapat tumbuh berkisar antara 21-27\u00baC pada siang hari dan 13-16\u00baC pada malam hari. namun tanaman paprika masih dapat tumbuh bila ditanam pada tempat dengan suhu 30\u00baC. Di daerah dataran tinggi Indonesia, tanaman paprika dapat tumbuh pada suhu 16-25\u00baC. Tanaman paprika dapat tumbuh pada tempat dengan ketinggian 700-1500 mdpl. Ketinggian tempat agar tanaman paprika tumbuh dengan optimal adalah 1000 mdpl."
+            ],
+            "tag": "syarat_tanam_paprika"
+        },
+        {
+            "patterns": [
+                "kentang",
+                "Apa syarat tanam kentang agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman kentang",
+                "ketinggian lahan yang cocok dan tepat untuk menanam kentang",
+                "curah hujan yang pas untuk pohon kentang",
+                "suhu daerah yang baik untuk menanam kentang",
+                "kondisi yang cocok untuk tumbuhan kentang",
+                "syarat untuk bisa menanam kentang",
+                "apa saja kondisi yang mendukung menanam kentang",
+                "dimana saya dapat menanam kentang ?",
+                "kondisi yang memenuhi syarat menanam kentang",
+                "tanah yang cocok untuk menanam kentang",
+                "ketinggian yang sesuai untuk menanam kentang",
+                "pada iklim apa kentang cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam kentang",
+                "pada ketinggian berapa tanaman kentang dapat tumbuh"
+            ],
+            "responses": [
+                "Tanaman kentang cocok ditanam di dataran medium sampai tinggi antara 500-3000 m dpl. Dan dengan suhu 20-30\u00baC adalah suhu yang sesuai untuk pertumbuhan batang dan daun, sedangkan suhu kurang dari 20\u00baC cocok untuk inisiasi dan pembesaran umbi. Lahan yang baik digunakan untuk budidaya kentang diantaranya memiliki tekstur sedang, gembur, subur dan berdrainase baik."
+            ],
+            "tag": "syarat_tanam_kentang"
+        },
+        {
+            "patterns": [
+                "kedelai",
+                "Apa syarat tanam kedelai agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman kedelai",
+                "ketinggian lahan yang cocok dan tepat untuk menanam kedelai",
+                "curah hujan yang pas untuk pohon kedelai",
+                "suhu daerah yang baik untuk menanam kedelai",
+                "kondisi yang cocok untuk tumbuhan kedelai",
+                "syarat untuk bisa menanam kedelai",
+                "apa saja kondisi yang mendukung menanam kedelai",
+                "dimana saya dapat menanam kedelai ?",
+                "kondisi yang memenuhi syarat menanam kedelai",
+                "tanah yang cocok untuk menanam kedelai",
+                "ketinggian yang sesuai untuk menanam kedelai",
+                "pada iklim apa kedelai cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam kedelai",
+                "pada ketinggian berapa tanaman kedelai dapat tumbuh"
+            ],
+            "responses": [
+                "Tanaman Kedelai dapat tumbuh pada berbagai jenis tanah asal drainase (tata air) clan aerasi (tata udara) tanah cukup baik, curah hujan 100-400 mm/bulan, suhu udara 23-30\u00b0C, kelembaban 60-70%, pH tanah 5,8-7 dan ketinggian kurang dari 600 m dpl."
+            ],
+            "tag": "syarat_tanam_kedelai"
+        },
+        {
+            "patterns": [
+                "labu",
+                "Apa syarat tanam labu agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman labu",
+                "ketinggian lahan yang cocok dan tepat untuk menanam labu",
+                "curah hujan yang pas untuk pohon labu",
+                "suhu daerah yang baik untuk menanam labu",
+                "kondisi yang cocok untuk tumbuhan labu",
+                "syarat untuk bisa menanam labu",
+                "apa saja kondisi yang mendukung menanam labu",
+                "dimana saya dapat menanam labu ?",
+                "kondisi yang memenuhi syarat menanam labu",
+                "tanah yang cocok untuk menanam labu",
+                "ketinggian yang sesuai untuk menanam labu",
+                "pada iklim apa labu cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam labu",
+                "pada ketinggian berapa tanaman labu dapat tumbuh"
+            ],
+            "responses": [
+                "Tanaman labu dapat tumbuh baik di dataran tinggi dengan ketinggian 900 \u2013 1.100 m dpl. Suhu yang baik untuk pertumbuhannya ialah 21 \u2013 28\u00b0C pada siang hari dan 15 - 20\u00b0C pada malam hari. Tanaman labu memerlukan tanah yang gembur, berpasir, subur dan banyak mengandung humus."
+            ],
+            "tag": "syarat_tanam_labu"
+        },
+        {
+            "patterns": [
+                "stroberi",
+                "Apa syarat tanam stroberi agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman stroberi",
+                "ketinggian lahan yang cocok dan tepat untuk menanam stroberi",
+                "curah hujan yang pas untuk pohon stroberi",
+                "suhu daerah yang baik untuk menanam stroberi",
+                "kondisi yang cocok untuk tumbuhan stroberi",
+                "syarat untuk bisa menanam stroberi",
+                "apa saja kondisi yang mendukung menanam stroberi",
+                "dimana saya dapat menanam stroberi ?",
+                "kondisi yang memenuhi syarat menanam stroberi",
+                "tanah yang cocok untuk menanam stroberi",
+                "ketinggian yang sesuai untuk menanam stroberi",
+                "pada iklim apa stroberi cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam stroberi",
+                "pada ketinggian berapa tanaman stroberi dapat tumbuh"
+            ],
+            "responses": [
+                "Stroberi dapat tumbuh di iklim dengan curah hujan 600-700 mm/tahun, penyinaran cahaya matahari 8\u201310 jam, temperatur 17\u201320 OC, kelembaban udara antara 80-90%. Media tanam yaitu tanah liat berpasir, subur, gembur, mengandung banyak bahan organik, tata air dan udara baik, (pH tanah) untuk budidaya dilapang antara 5.4-7.0, sedangkan untuk budidaya di pot adalah 6.5\u20137,0. Dan ketinggian tempat yang memenuhi syarat iklim tersebut adalah 1.000-1.500 m dpl."
+            ],
+            "tag": "syarat_tanam_stoberi"
+        },
+        {
+            "patterns": [
+                "tomat",
+                "Apa syarat tanam tomat agar tumbuh dengan optimal?",
+                "tanah yang cocok untuk budidaya tanaman tomat",
+                "ketinggian lahan yang cocok dan tepat untuk menanam tomat",
+                "curah hujan yang pas untuk pohon tomat",
+                "suhu daerah yang baik untuk menanam tomat",
+                "kondisi yang cocok untuk tumbuhan tomat",
+                "syarat untuk bisa menanam tomat",
+                "apa saja kondisi yang mendukung menanam tomat",
+                "dimana saya dapat menanam tomat ?",
+                "kondisi yang memenuhi syarat menanam tomat",
+                "tanah yang cocok untuk menanam tomat",
+                "ketinggian yang sesuai untuk menanam tomat",
+                "pada iklim apa tomat cocok untuk ditanam",
+                "jenis tanah yang sesuai untuk menanam tomat",
+                "pada ketinggian berapa tanaman tomat dapat tumbuh"
+            ],
+            "responses": [
+                "Tomat dapat ditanam di dataran tinggi maupun dataran rendah. Tanaman dapat tumbuh baik pada tanah yang gembur, sarang, subur, banyak mengandung humus dan pH tanah 5-6. Temperatur optimum untuk pertumbuhan tomat antara 21-24 C. Waktu tanam diperhitungkan berdasarkan kemungkinan bahwa waktu berbunga dan berbuah jatuh dimusim kemarau tetapi masih ada sedikit hujan."
+            ],
+            "tag": "syarat_tanam_tomat"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan apel",
+                "pupuk apel",
+                "dosis pupuk dasar apel",
+                "pupuk untuk apel yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk apel",
+                "banyak pupuk untuk apel",
+                "pupuk yang bagus untuk apel",
+                "pupuk yang cocok untuk apel",
+                "pohon apel butuh pupu berapa",
+                "perbandingan jenis pupuk untuk apel",
+                "pupuk organin untuk pohon apel",
+                "pupuk yang baik untuk apel"
+            ],
+            "responses": [
+                "Untuk dosis pupuk dasar, pohon apel membutuhkan sekitar 20 kg pupuk organik. Sedangkan untuk dosis pupuk pemeliharaan, pohon apel yang belum berbuah membutuhkan 1 -2 kg pupuk NPK (15-15-15) atau campuran urea, 3 kg pupuk TSP dan KCI/ZK (4:2:1), serta 20 kg pupuk organik. Dan untuk pohon apel yang sudah berbuah akan membutuhkan 1 kg pupuk NPK (15-15-15) atau campuran urea, 1 kg TSP dan KCI/ZK(1:2:1), serta 20 kg pupuk organik."
+            ],
+            "tag": "dosis_pupuk_apel"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan ceri",
+                "pupuk ceri",
+                "dosis pupuk dasar ceri",
+                "pupuk untuk ceri yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk ceri",
+                "banyak pupuk untuk ceri",
+                "pupuk yang bagus untuk ceri",
+                "pupuk yang cocok untuk ceri",
+                "pohon ceri butuh pupu berapa",
+                "perbandingan jenis pupuk untuk ceri",
+                "pupuk organin untuk pohon ceri",
+                "pupuk yang baik untuk ceri"
+            ],
+            "responses": [
+                "Untuk dosis pupuk pemeliharaan, ceri bisa menggunakan kombinasi pupuk anorganik dengan takaran 1 kg pupuk kompos/kandang, 20 butir NPK, dan 1 sdt POC BMW. Atau bisa juga menggunakan kombinasi pupuk organik dengan takaran 1 sdt POC BMW dan 1 sdm KOCOR BMW"
+            ],
+            "tag": "dosis_pupuk_ceri"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan jagung",
+                "pupuk jagung",
+                "dosis pupuk dasar jagung",
+                "pupuk untuk jagung yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk jagung",
+                "banyak pupuk untuk jagung",
+                "pupuk yang bagus untuk jagung",
+                "pupuk yang cocok untuk jagung",
+                "pohon jagung butuh pupu berapa",
+                "perbandingan jenis pupuk untuk jagung",
+                "pupuk organin untuk pohon jagung",
+                "pupuk yang baik untuk jagung"
+            ],
+            "responses": [
+                "Untuk dosis pupuk dasar, pohon jagung membutuhkan 1/3 bagian pupuk Urea dan 1 bagian pupuk TSP diberikan saat tanam, 7 cm di parit kiri dan kanan lubang tanam sedalam 5 cm lalu ditutup tanah. Sedangkan untuk dosis pemeliharaan, berikan 1/3 bagian pupuk Urea ditambah 1/3 bagian pupuk KCl diberikan setelah tanaman berumur 30 hari, 15 cm di parit kiri dan kanan lubang tanam sedalam 10 cm lalu di tutup tanah. Dan yang terakhir, berikan 1/3 bagian pupuk Urea diberikan saat tanaman berumur 45 hari."
+            ],
+            "tag": "dosis_pupuk_jagung"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan anggur",
+                "pupuk anggur",
+                "dosis pupuk dasar anggur",
+                "pupuk untuk anggur yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk anggur",
+                "banyak pupuk untuk anggur",
+                "pupuk yang bagus untuk anggur",
+                "pupuk yang cocok untuk anggur",
+                "pohon anggur butuh pupu berapa",
+                "perbandingan jenis pupuk untuk anggur",
+                "pupuk organin untuk pohon anggur",
+                "pupuk yang baik untuk anggur"
+            ],
+            "responses": [
+                "Untuk pohon anggur yang berusia 10 hari \u2013 3 bulan, berikan pupuk Urea 7,5 gr atau ZA 10 gr. Pada usia 3 bulan \u2013 6 bulan, pohon anggur membutuhkan pupuk Urea 15 gr atau ZA 20 gr. Usia >6 bulan berikan pupuk Urea 22,5 gr atau ZA 30 gr. Usia 9 bulan berikan Urea 33,75 gr atau ZA 45 gr. Dan pada usia 12 bulan, berikan Urea 50 gr atau ZA 60 gr."
+            ],
+            "tag": "dosis_pupuk_anggur"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan jeruk",
+                "pupuk jeruk",
+                "dosis pupuk dasar jeruk",
+                "pupuk untuk jeruk yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk jeruk",
+                "banyak pupuk untuk jeruk",
+                "pupuk yang bagus untuk jeruk",
+                "pupuk yang cocok untuk jeruk",
+                "pohon jeruk butuh pupu berapa",
+                "perbandingan jenis pupuk untuk jeruk",
+                "pupuk organin untuk pohon jeruk",
+                "pupuk yang baik untuk jeruk"
+            ],
+            "responses": [
+                "Untuk dosis pupuk dasar, pohon jeruk membutuhkan 20 kg pupuk organik. Sedangkan untuk dosis pupuk pemeliharaan, pohon jeruk yang berusia 1 tahun membutuhkan 7 g pupuk NPK (15:5:20) dan 20 kg pupuk organik. Usia 2 tahun membutuhkan 134 g pupuk NPK (15:5:20) dan 20 kg pupuk organik. Usia 3 tahun membutuhkan 134 g pupuk NPK (15:5:20) dan 30 kg pupuk organik. Usia 4 tahun membutuhkan 1.200 g pupuk NPK (15:5:20) dan 40 kg pupuk organik. Dan untuk pohon jeruk yang sudah berbuah akan membutuhkan pupuk NPK (2:1:2) dengan dosis ? 3% dari berat buah dan 20 \u2013 40 kg pupuk organik."
+            ],
+            "tag": "dosis_pupuk_jeruk"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan persik",
+                "pupuk persik",
+                "dosis pupuk dasar persik",
+                "pupuk untuk persik yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk persik",
+                "banyak pupuk untuk persik",
+                "pupuk yang bagus untuk persik",
+                "pupuk yang cocok untuk persik",
+                "pohon persik butuh pupu berapa",
+                "perbandingan jenis pupuk untuk persik",
+                "pupuk organin untuk pohon persik",
+                "pupuk yang baik untuk persik"
+            ],
+            "responses": [
+                "Lakukan pemupukan dengan kandungan 2 pon pupuk nitrogen setelah 5 minggu ditanam. Pada tahun kedua berikan pupuk dengan tambahan tiga perempat pupuk nitrogen pada musim semi dan awal musim panen."
+            ],
+            "tag": "dosis_pupuk_persik"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan paprika",
+                "pupuk paprika",
+                "dosis pupuk dasar paprika",
+                "pupuk untuk paprika yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk paprika",
+                "banyak pupuk untuk paprika",
+                "pupuk yang bagus untuk paprika",
+                "pupuk yang cocok untuk paprika",
+                "pohon paprika butuh pupu berapa",
+                "perbandingan jenis pupuk untuk paprika",
+                "pupuk organin untuk pohon paprika",
+                "pupuk yang baik untuk paprika"
+            ],
+            "responses": [
+                "Untuk dosis pupuk dasar yang digunakan dan kebutuhan pupuk setiap satu hektar lahan paprika adalah pupuk kandang / kompos sebanyak 10 \u2013 15 ton, ZA / Urea sebanyak 100 \u2013 150 kg, TSP/SP36 sebanyak 200 \u2013 300 kg dan KCL sebanyak 100 \u2013 n150 kg. Jumlah pupuk ini bukan SOP dan tidak baku, karena jumlah pupuk yang diberikan disesuaikan dengan tingkat kesuburan tanah. Untuk pemberian pupuk pemeliharaan bisa menggunakan pupuk makro atau mikro."
+            ],
+            "tag": "dosis_pupuk_paprika"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan kentang",
+                "pupuk kentang",
+                "dosis pupuk dasar kentang",
+                "pupuk untuk kentang yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk kentang",
+                "banyak pupuk untuk kentang",
+                "pupuk yang bagus untuk kentang",
+                "pupuk yang cocok untuk kentang",
+                "pohon kentang butuh pupu berapa",
+                "perbandingan jenis pupuk untuk kentang",
+                "pupuk organin untuk pohon kentang",
+                "pupuk yang baik untuk kentang"
+            ],
+            "responses": [
+                "Untuk dosis pupuk dasar, kentang membutuhkan 300 kg pupuk ZA, 250 kg SP36, 250 kg KCI/ha, serta 20 t/ha pupuk organik. Sedangkan untuk dosis pupuk pemeliharaan, kentang yang berusia 35 hari membutuhkan 25 kg/ha urea, dengan cara ditugal dengan jarak sekitar 5 cm dari tanaman."
+            ],
+            "tag": "dosis_pupuk_kentang"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan kedelai",
+                "pupuk kedelai",
+                "dosis pupuk dasar kedelai",
+                "pupuk untuk kedelai yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk kedelai",
+                "banyak pupuk untuk kedelai",
+                "pupuk yang bagus untuk kedelai",
+                "pupuk yang cocok untuk kedelai",
+                "pohon kedelai butuh pupu berapa",
+                "perbandingan jenis pupuk untuk kedelai",
+                "pupuk organin untuk pohon kedelai",
+                "pupuk yang baik untuk kedelai"
+            ],
+            "responses": [
+                "Untuk lahan kering masam, dosis pupuk yang diberikan 75 kg Urea + 100 kg SP36 + 100 kg KCl/ha + 500 kg CaCO3/ha (setara 1500 kg dolomit). Pupuk urea, SP36 clan KCI diberikan paling lambat saat tanaman berumur 14 hari. Pupuk diberikan dengan cara ditugal atau dilarik 5-7 cm dari tanaman, kemudian ditutup tanah. Sedangkan kapur (dolomit) ditebar sebelum tanam saat pengolahan lahan kedua. Untuk lahan sawah, dosis pupuk 50 kg Urea + 50 kg SP36 + 100 kg KCl/ha."
+            ],
+            "tag": "dosis_pupuk_kedelai"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan labu",
+                "pupuk labu",
+                "dosis pupuk dasar labu",
+                "pupuk untuk labu yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk labu",
+                "banyak pupuk untuk labu",
+                "pupuk yang bagus untuk labu",
+                "pupuk yang cocok untuk labu",
+                "pohon labu butuh pupuk berapa",
+                "perbandingan jenis pupuk untuk labu",
+                "pupuk organin untuk pohon labu",
+                "pupuk yang baik untuk labu"
+            ],
+            "responses": [
+                "Pupuk yang dibutuhkan terdiri atas pupuk kandang dan pupuk buatan. Pupuk kandang diaplikasikan sebanyak 5 kg/lubang dan pupuk buatan (NPK 15:15:15) sebanyak 50 g /lubang. Pemupukan selanjutnya dilakukan dengan melarutkan pupuk NPK sebanyak 10 g /liter air yang diberikan sesuai kebutuhan."
+            ],
+            "tag": "dosis_pupuk_labu"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan stoberi",
+                "pupuk stoberi",
+                "dosis pupuk dasar stoberi",
+                "pupuk untuk stoberi yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk stoberi",
+                "banyak pupuk untuk stoberi",
+                "pupuk yang bagus untuk stoberi",
+                "pupuk yang cocok untuk stoberi",
+                "pohon stoberi butuh pupu berapa",
+                "perbandingan jenis pupuk untuk stoberi",
+                "pupuk organin untuk pohon stoberi",
+                "pupuk yang baik untuk stoberi"
+            ],
+            "responses": [
+                "Pada fase benih saat mengutamakan pertumbuhan vegetatif, pupuk NPK bisa digunakan dengan kadar N lebih tinggi dari P dan K, seperti NPK 32-10-10. Pada fase pertengahan menggunakan pupuk dengan kadar NPK yang seimbang 20-20-20 atau NPK 10-10-10. Pada fase generatif yakni saat pembentukan buah sedang pesat sangat dianjurkan memberikan pupuk NPK dengan kadar N dan K 1:2 atau 1:3. Contoh pupuk yang digunakan pada fase generatif adalah KNO3 atau NPK 10-10-20."
+            ],
+            "tag": "dosis_pupuk_stoberi"
+        },
+        {
+            "patterns": [
+                "Dosis pupuk untuk lahan stoberi",
+                "pupuk stoberi",
+                "dosis pupuk dasar stoberi",
+                "pupuk untuk stoberi yang sudah berbuah",
+                "berapa kilogram (kg) pupuk untuk stoberi",
+                "banyak pupuk untuk stoberi",
+                "pupuk yang bagus untuk stoberi",
+                "pupuk yang cocok untuk stoberi",
+                "pohon stoberi butuh pupu berapa",
+                "perbandingan jenis pupuk untuk stoberi",
+                "pupuk organin untuk pohon stoberi",
+                "pupuk yang baik untuk stoberi"
+            ],
+            "responses": [
+                "Untuk dosis pupuk dasar, tomat membutuhkan 10-15 ton/Ha pupuk kompos/kandang dan 200-250kg/Ha pupuk SP-36. Sedangkan untuk dosis pemeliharaan, tomat membutuhkan pupuk urea dan KCI yang sebaiknya diberikan 2 kali,yaitu setelah tanaman tumbuh (satu minggu setelah tanam) dan umur satu bulan dilapangan. Dosis pupuk tersebut adalah 200 Kg/Ha urea dan 100Kg/Ha KCI,diberikan 2 kali masing-masing 1/2 dosis (umur 1 minggu dan 4 minggu)."
+            ],
+            "tag": "dosis_pupuk_tomat"
+        },
+        {
+            "patterns": [
+                "infromasi sangat membantu. terima kasih",
+                "terima kasih",
+                "baik",
+                "mantap",
+                "informatif",
+                "selamat tinggal",
+                "terima kasih atas infonya",
+                "sangat jelas",
+                "infonya lengkap",
+                "keren",
+                "terima kasih sudah membantu",
+                "terima kasih banyak bantuannya",
+                "terima kasih infonya",
+                "baiklah kalau begitu, terima kasih",
+                "sampai jumpa lagi",
+                "selamat tinggal",
+                "baik terima kasih",
+                "oke baik",
+                "infonya sangat lengkap terima kasih",
+                "terima kasih informasinya"
+            ],
+            "responses": [
+                "Terima kasih sudah menggunakan Helptree Chatbot! Jika ada pertanyaan, silahkan tanyakan ke chatbot!"
+            ],
+            "tag": "penutup"
+        },
+        {
+            "patterns": [
+                "Apa saja penyakit apel pada bagian akar?",
+                "penyakit apel pada akar",
+                "penyakit akar apel",
+                "daun apel menjadi layu dan gugur serta kulit akar membusuk",
+                "gejala penyakit akar pohon apel",
+                "penyakit akar busuk apel",
+                "gejala penyakit akar busuk apel",
+                "penyakit tumbuhan apel pada bagian akar",
+                "Apa saja penyakit apel pada bagian batang?",
+                "penyakit apel pada batang",
+                "batang apel berwarna coklat kehitaman",
+                "batang apel busuk",
+                "batang apel mengeluarkan cairan",
+                "gejala penyakit batang atau cabang apel",
+                "Apa saja penyakit apel pada bagian buah?",
+                "penyakit pada buah apel",
+                "daun tanaman apel bagian atas tampak putih",
+                "tunas tanaman apel tumbuh tidak normal, kerdil dan tidak berbuah",
+                "Buah apel timbul bercak kecil warna coklat muda, busuk, menggelembung, berair, dan berwarna pucat.",
+                "semua penyakit apel"
+            ],
+            "responses": [
+                "Penyakit pada tanaman apel yang menyerang bagian akar yaitu:\nAkar busuk. Dengan gejala daun yang layu lalu gugur dan kulit akar membusuk\n\nPenyakit pada tanaman apel yang menyerang bagian batang yaitu:\nPenyakit Kanker Batang Apel : dengan gejala batang/cabang busuk, berwarna coklat kehitaman, terkadang mengeluarkan cairan.\n\nPenyakit pada tanaman apel yang menyerang bagian buah antara lain:\n- Penyakit Embun Tepung. Dengan gejala daun bagian atas tampak putih, tunas tumbuh tidak normal, kerdil dan tidak berbuah, buah berwarna coklat dan berkutil coklat.\n- Penyakit Kanker Buah Apel. Dengan gejala buah timbul bercak kecil warna coklat muda, busuk, menggelembung, berair, dan berwarna pucat."
+            ],
+            "tag": "penyakit_apel"
+        },
+        {
+            "patterns": [
+                "Apa saja penyakit ceri pada bagian batang?",
+                "penyakit batang pada ceri",
+                "batang ceri",
+                "Apa saja penyakit ceri pada bagian buah?",
+                "penyakit ceri pada buah",
+                "buah ceri",
+                "daun tanaman ceri bagian atas tampak putih",
+                "tunas ceri tumbuh tidak normal, kerdil dan tidak berbuah",
+                "buah ceri berwarna coklat dan berkutil coklat",
+                "gejala penyakit ceri pada bagian buah",
+                "gejala penyakit ceri pada bagian batang",
+                "penyakit ceri",
+                "semua penyakit ceri",
+                "ceri tidak tumbuh subur"
+            ],
+            "responses": [
+                "Penyakit pada tanaman ceri yang menyerang bagian batang antara lain: \n- Penyakit Embun Tepung. Dengan gejala daun bagian atas tampak putih, tunas tumbuh tidak normal, kerdil dan tidak berbuah, buah berwarna coklat dan berkutil coklat."
+            ],
+            "tag": "penyakit_ceri"
+        },
+        {
+            "patterns": [
+                "Apa saja penyakit jagung pada bagian daun?",
+                "Apa saja penyakit jagung pada bagian seluruh bagian?",
+                "gejala dari penyakit bulai jagung",
+                "daun tanaman jagung menguning, meruncing, kaku",
+                "biji-biji jagung berwarna merah jambu atau merah kecoklatan",
+                "tongkol jagung berbentuk tidak normal",
+                "gejalanya daun jagung mengalami klorosis",
+                "masuknya cendawan ini ke dalam biji jagung",
+                "gejala dari penyakit gosok bengkak jagung",
+                "gejala dari penyakit busuk tongkol dan biji jagung",
+                "gejala dari penyakit bulai jagung",
+                "semua penyakit jagung",
+                "jagung tidak tumbuh subur"
+            ],
+            "responses": [
+                "Penyakit pada tanaman jagung yang menyerang bagian daun antara lain: \n- Penyakit Bulai. Gejalanya berbeda-beda sesuai dengan usia tanaman. Jika tanaman jagung berusia 0 \u2013 3 minggu, gejalanya yaitu semua daun tanaman menguning, meruncing dan kaku. Jika berusia 3 \u2013 5 minggu, gejalanya yaitu daun yang baru membuka menguning, pertumbuhan lambat, tongkol hanya berbiji sedikit dan terkadang tongkol berbentuk tidak normal. Jika berusia > 5 minggu, gejalanya daun mengalami klorosis. \n- Penyakit Gosong Bengkak. Gejalanya terjadi pada tongkol ditandai dengan masuknya cendawan ini ke dalam biji sehingga terjadi pembengkakan dan mengeluarkan kelenjar (gall), pembengkakan ini menyebabkan pembungkus terdesak hingga pembungkus rusak dan kelenjar keluar dari pembungkus dan spora tersebar. \n- Penyakit Busuk Tongkol dan Biji. Gejalanya dapat diketahui setelah membuka pembungkus tongkol, biji-biji jagung berwarna merah jambu atau merah kecoklatan kemudian berubah menjadi warna coklat sawo matang."
+            ],
+            "tag": "penyakit_jagung"
+        },
+        {
+            "patterns": [
+                "Apa saja penyakit anggur pada bagian daun?",
+                "Apa saja penyakit anggur pada bagian tunas?",
+                "Apa saja penyakit anggur pada bagian buah?",
+                "Apa saja penyakit anggur pada bagian dahan atau ranting?",
+                "Muncul bercak-bercak putih pada daun anggur",
+                "Pertumbuhan tanaman anggur terganggu dan buah rusak",
+                "Semua penyakit anggur",
+                "penyakit pada tanaman anggur",
+                "Muncul bercak-bercak kuning kehijauan pada batang, tangkai, dan butir buah anggur",
+                "Daun anggur menggulung ke atas",
+                "Terdapat bercak-bercak kecil berwarna putih pada buah anggur",
+                "Penyakit apa yang menyebabkan buah anggur menjadi busuk?",
+                "Bercak kelabu pada tanaman anggur",
+                "Tanaman anggur muncul penyakit seperti kudis",
+                "anggur tidak tumbuh subur"
+            ],
+            "responses": [
+                "Penyakit pada tanaman anggur antara lain: \n- Penyakit Tepung Palsu. Penyakit tepung palsu ini disebabkan oleh jamur Plasmopora viticola yang menyerang daun, tunas dan buah, sehingga menyebabkan pertumbuhan tanaman terganggu dan menimbulkan kerusakan buah. Penyakit ini juga menyerang batang muda, sulur, tangkai buah, dan butir buah. Gejalanya adalah timbul bercak-bercak kuning kehijauan dengan batas yang tidak jelas. Bercak-bercak tersebut akan meluas dan bersatu berubah menjadi berwarna coklat. \n- Penyakit Embun Tepung. Gejala muncul pada semua tingkat pertumbuhan (daun, ranting, dan buah) terdapat bercak-bercak bertepung putih kelabu dan meluas sehingga sisi atas daun nampak kelabu. Dalam kondisi kering daun terserang menggulung ke atas, warna tepung kelabu berubah menjadi hitam / gelap dan tanaman terserang tampak layu dan kerdil. \n- Penyakit Busuk Hitam. Gejalanya adalah muncul bercak-bercak kecil berwarna putih pada buah hampir matang dengan warna tepi coklat, kemudian busuk buah mengendap dan mengeriput hitam. \n- Penyakit Busuk Kapang Kelabu. Penyakit ini menyerang saat buah anggur menjelang masak. Buah berwarna cokelat tua, keriput, dan busuk. \n- Penyakit Kudis. Penyakit ini menyerang semua bagian tanaman. Bercak kelabu dengan tepi coklat kemerahan, kemudian daging mengeras dan berkudis."
+            ],
+            "tag": "penyakit_anggur"
+        },
+        {
+            "patterns": [
+                "Apa saja penyakit jeruk pada bagian daun?",
+                "Apa saja penyakit jeruk pada bagian akar?",
+                "Apa saja penyakit jeruk pada bagian batang?",
+                "Apa saja penyakit jeruk pada seluruh bagian?",
+                "semua penyakit jeruk",
+                "bercak hitam pada kulit pangkal batang jeruk",
+                "kulit batang jeruk cekung mengeluarkan blendok",
+                "warna kayu jeruk abu-abu, kulit kering dan mengelupas",
+                "tunas dan tangkai daun jeruk ada lapisan tepung berwarna putih",
+                "kudis pada bagian daun tangkai buah jeruk",
+                "bercak kecil pada daun jeruk",
+                "buah jeruk rasanya asam masam",
+                "gejala dari penyakit blendok jeruk",
+                "gejala dari busuk akar jeruk",
+                "gejala dari penyakit embun tepuk jeruk",
+                "gejala dari penyakit busuk buah jeruk",
+                "jeruk tidak tumbuh subur"
+            ],
+            "responses": [
+                "Penyakit pada tanaman jeruk yang menyerang bagian akar antara lain: \n- Penyakit Busuk Akar dan Pangkal Batang. Gejalanya adalah bercak basah berwarna gelap/hitam kebasahan pada permukaan kulit pangkal batang; permukaan kulit batang cekung dan mengeluarkan blendok. \n\nPenyakit pada tanaman jeruk yang menyerang bagian batang antara lain: \n- Penyakit Blendok. Penyakit ini menyerang bagian batang / cabang. Dengan gejalanya kulit ketiak cabang menghasilkan gom yang menarik perhatian kumbang, warna kayu keabu-abuan, kulit kering, dan mengelupas. \n- Penyakit Embun Tepung. Bagian yang diserang adalah daun dan tangkai muda. Dengan gejala terdapat lapisan tepung berwarna putih pada tunas muda dan tangkai daun permukaan atas. \n- Penyakit Kudis. Menyerang bagian daun, tangkai atau buah. Dengan gejala ada bercak kecil jernih pada salah satu permukaan daun, tangkai atau buah yang berubah menjadi gabus berwarna kuning. \n\nPenyakit pada tanaman jeruk yang menyerang bagian buah antara lain: \n- Penyakit Busuk Buah. Gejalanya adalah permukaan kulit terdapat tepung-tepung padat berwarna hijau kebiruan. Terdapat bercak kecil warna keabu-abuan kemudian menjadi suram coklat pusat dan membusuk. Sekeliling tangkai buah berwarna coklat muda. Buahnya terasa masam."
+            ],
+            "tag": "penyakit_jeruk"
+        },
+        {
+            "patterns": [
+                "Apa saja penyakit persik pada bagian daun?",
+                "Apa saja penyakit persik pada bagian buah?",
+                "Penyakit pada tanaman persik",
+                "Semua penyakit persik",
+                "Penyakit pada tanaman persik yang menyebabkan daun menjadi layu dan kering",
+                "buah persik mengkerut dan jatuh sebelum waktunya",
+                "Muncul bintik-bintik pada buah persik",
+                "daun persik berubah menjadi gelap dan lebih padat",
+                "pertumbuhan tunas pada tanaman persik terhambat",
+                "gejala penyakit kanker pada buah persik",
+                "tanaman persik hanya berbuah sedikit",
+                "bentuk buah persik lebih kecil dari biasanya",
+                "Penyakit yang menyerang buah persik",
+                "persik tidak tumbuh subur"
+            ],
+            "responses": [
+                "Penyakit pada tanaman persik yang menyerang bagian batang antara lain: \nKanker ranting buah persik: gejalanya adalah daun-daun yang layu dan kering pada ranting yang terinfeksi, pembentukan gusi pada kulit kayu dan jaringan vaskuler pucuk serta buah mengkerut dan jatuh sebelum waktunya. Hal ini disebabkan oleh Fusicoccum amygdali. \n\nPenyakit pada tanaman persik yang menyerang bagian buah yaitu: \nKeropeng Persik: gejalanya adalah buah seperti beludru, berwarna kehijauan dan bintik-bintik melingkari buah, terdapat lesi kecil dan berwarna hijau pada batang dan kemudian dibawah daun, berangsur-angsur berubah menjadi coklat kekuningan atau hitam. Disebabkan oleh jamur Venturia carpophila. \n\nPenyakit pada tanaman persik yang menyerang seluruh bagian tanaman yaitu: \nPenyakit Persik Palsu: gejalanya adalah dedaunan gelap dan lebih padat, pemendekan ruang (pertumbuhan cabang/ranting lateral yang tidak normal dan pertumbuhan tunas yang terhambat), daun muncul lebih awal namun tetap berada di pohon lebih lama daripada di pohon yang sehat serta buah lebih sedikit, lebih kecil dari biasanya, lebih berwarna dan sering kali matang bebrapa hari lebih awal dari biasanya. Gejala ini disebabkan oleh Xylella fastidiosa, bakteri yang menjajah jaringan pembuluh akar, batang dan dauh pada pohon persik."
+            ],
+            "tag": "penyakit_persik"
+        },
+        {
+            "patterns": [
+                "Apa saja penyakit pada tanaman paprika?",
+                "bercak daun paprika bulat berwarna abu-abu dan cokelat",
+                "semua penyakit paprika",
+                "gejala penyakit becak daun serkospora paprika",
+                "banyak bercak pada daun paprika",
+                "penyakit pada bagian daun paprika",
+                "penyakit pada bagian tangkai paprika",
+                "penyakit pada bagian batang paprika",
+                "penyakit pada bagian tangkai paprika",
+                "penyakit pada bagian bunga paprika",
+                "tanaman paprika tidak tumbuh subur",
+                "paprika tidak tumbuh subur"
+            ],
+            "responses": [
+                "Penyakit pada tanaman paprika yang menyerang seluruh bagian antara lain: \n- Penyakit Bercak Daun Serkospora. Penyakit ini menyerah seluruh bagian tanaman, yaitu pada daun, tangkai daun, batang, tangkai bunga, dan bunga. Bercak pada daun berbentuk bulat sirkuler, bagian tengah berwarna abu \u2013 abu tua, dengan bagian pinggir berwarna cokelat tua. Bercak juga mempunyai jalur \u2013 jalur sepusat yang tampak lebh jelas jika dilihat pada permukaan atas daun."
+            ],
+            "tag": "penyakit_paprika"
+        },
+        {
+            "patterns": [
+                "Apa saja penyakit pada tanaman kentang?",
+                "Apa saja penyakit kentang pada bagian akar?",
+                "Penyakit yang menyerang umbi kentang",
+                "Semua penyakit kentang",
+                "penyakit kentang",
+                "Gejala penyakit busuk umbi pada tanaman kentang",
+                "daun tanaman kentang menguning dan menggulung",
+                "daun pada tanaman kentang layu dan kering",
+                "bercak-bercak pada tanaman kentang",
+                "penyakit yang menyebabkan akar dan umbi kentang menjadi busuk",
+                "tanaman kentang tidak tumbuh subur",
+                "kentang tidak tumbuh subur"
+            ],
+            "responses": [
+                "Penyakit pada tanaman kentang yang menyerang bagian akar antara lain: \n- Penyakit Busuk Umbi. Gejalanya adalah daun menguning dan menggulung, lalu layu dan kering. Bagian tanaman yang berada dalam tanah terdapat bercak-bercak berwarna coklat. Infeksi akan menyebabkan akar dan umbi muda busuk."
+            ],
+            "tag": "penyakit_kentang"
+        },
+        {
+            "patterns": [
+                "Apa saja penyakit pada tanaman kedelai?",
+                "Apa saja penyakit kedelai pada bagian akar?",
+                "penyakit pada tanaman kedelai",
+                "semua penyakit kedelai",
+                "batang pada tanaman kedelai berubah menjadi kecoklatan",
+                "pangkal batang dan akar tanaman kedelai membusuk",
+                "terdapat bercak pada daun kedelai",
+                "biji kedelai muncul bercak berwarna gelap",
+                "penyebab tanaman kedelai menjadi kerdil",
+                "daun kedelai lebih hijau dibandingkan daun normal",
+                "daun muda pada tanaman kedelai menjadi keriting dan kasar",
+                "daun kedelai berubah menjadi warna kuning belang",
+                "warna daun kedelai tidak merata",
+                "kedelai tidak tumbuh subur"
+            ],
+            "responses": [
+                "Penyakit pada tanaman kedelai yang menyerang bagian akar antara lain: \n- Penyakit Busuk Rhizoctonia. Gejalanya adalah lapisan akar utama dan pangkal batang menjadi kecoklat-coklatan. Lapisan akar tersebut akan membentuk kanker cekung berwarna cokelat kemerah-merahan. Setelah itu, pangkal batang dan perakaran menjadi busuk sehingga tanaman menjadi layu dan mati. Pada daunnya terdapat bercak seperti terkena air panas. Pada bijinya, terdapat bercak berwarna gelap kebasah-basahan dan tampak kosong. \n\n- Penyakit kerdil. Gejalanya adalah tanaman menjadi kerdil, warna daun lebih hijau dibanding daun normal, daun muda tampak keriting dan kasar. Penyakit ini menyebabkan warna daun berubah dari hijau menjadi kuning belang, terutama pada bagian pucuk. Kemudian, tanaman menjadi kerdil, daun menjadi belang kuning, hijau muda atau hijau tidak merata."
+            ],
+            "tag": "penyakit_kedelai"
+        },
+        {
+            "patterns": [
+                "apa saja penyakit pada tanaman labu",
+                "semua penyakit labu",
+                "daun batang labu lapisan putih tepung",
+                "bercak kering daun labu",
+                "tanaman labu tidak tumbuh subur",
+                "gelaja penyakit embun tepung labu",
+                "penyebab daun dan batang muda pada tanaman labu mati"
+            ],
+            "responses": [
+                "Penyakit pada tanaman labu yang menyerang bagian batang antara lain: \n- Penyakit Embun Tepung. Gejala yang ditimbulkan oleh penyakit ini adalah permukaan daun dan batang muda terdapat lapisan putih bertepung, yang terdiri atas miselium, konidiofor dan konidium cendawan penyebab penyakit. Bercak kemudian menjadi kering dan akhirnya mengering. Jika penyakit berat, daun dan batang muda dapat mati."
+            ],
+            "tag": "penyakit_labu"
+        },
+        {
+            "patterns": [
+                "apa saja penyakit pada tanaman stoberi yang menyerang bagian akar",
+                "semua penyakit tanaman stoberi",
+                "gejala penyakit empelur merah stoberi",
+                "gejala penyakit kapang kelabu stoberi",
+                "gejala penyakit busuk buah matang stoberi",
+                "tanaman stoberi tumbuh kerdil",
+                "tanaman stoberi layu",
+                "akar stoberi ada cincin merah",
+                "buah stoberi busuk dan berwarna coklat",
+                "buah stoberi mengering",
+                "buah stoberi basah warna coklat",
+                "tanaman stoberi tidak tumbuh subur"
+            ],
+            "responses": [
+                "Penyakit pada tanaman stroberi yang menyerang bagian akar antara lain: \n- Penyakit Empelur Merah. Penyakit ini menyerang akar, sehingga tanaman menjadi kerdil kemudian layu. Jika akar dipotong akan terdapat cincin merah. \n\nPenyakit pada tanaman stroberi yang menyerang bagian buah antara lain: \n- Penyakit Kapang Kelabu. Gejalanya adalah bagian buah membusuk dan berwarna coklat lalu mengering. \n- Penyakit Busuk Buah Matang. Gejalanya adalah buah masak menjadi kebasah-basahan berwarna coklat muda dan buah dipenuhi massa spora berwarna merah jambu."
+            ],
+            "tag": "penyakit_stoberi"
+        },
+        {
+            "patterns": [
+                "apa saja penyakit tomat  yang menyerang bagian batang",
+                "apa saja penyakit tomat yang menyerang bagian buah",
+                "daun dan batang tomat bercak kecil berarir",
+                "bakteri tanaman tomat",
+                "gejala penyakit bercak kering tomat",
+                "gejala penyakit bintik bakteri tomat",
+                "batang dan tangkai tanaman tomat gelap",
+                "buah tomat gugur sebelum masak",
+                "daun tomat mengering dan keriting",
+                "daun tomat berwarna coklat hitam",
+                "bercak batang tomat berbentuk cekung",
+                "buah tomat kempot dan pecah-pecah",
+                "semua penyakit tomat"
+            ],
+            "responses": [
+                "Penyakit pada tanaman tomat: \n- Penyakit Bintik Bakteri Tomat. Gejala yang ditimbulkan bakteri penyebab penyakit tomat ini adalah adanya bercak-bercak kecil yang berair pada batang dan daun tanaman tomat. Bercak tersebut akan mengering dan membentuk cekungan yang berwarna coklat ke abu-abuan dengan diameter 1-5 mm. Tanaman tomat yang mendapat serangan dari bakteri ini daunnya akan mengering dan keriting kebawah. \n- Penyakit Bercak Kering Tomat. Gejala dapat terjadi pada daun, batang, dan buah. Pada daun terdapat bercak - bercak kecil bulat, bersudut, dan berwarna coklat tua sampai hitam. Bercak pada batang dan tangkai tanaman tampak gelap, lonjong memanjang dan membesar yang mempunyai lingkaran-lingkaran terpusat. Buah yang terinfeksi permukaannya menjadi sedikit kempot dan pecah-pecah, akan gugur sebelum masak."
+            ],
+            "tag": "penyakit_tomat"
+        }
+    ]
+}

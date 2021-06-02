@@ -1,0 +1,38 @@
+Kudis Apel 
+Busuk Hitam (Rot) Apel 
+Karat Apel
+Apel Sehat
+Blueberry Sehat
+Embun Tepung Ceri
+Ceri Sehat
+Bercak Abu-Abu Jagung
+Karat Jagung
+Hawar Daun Utara Jagung
+Jagung Sehat
+Busuk Hitam (Rot) Anggur Hitam
+Jamur Esca Anggur
+Hawar Daun Anggur
+Anggur Sehat
+Penghijauan Jeruk
+Bintik Bakteri Persik
+Persik Sehat
+Bintik Bakteri Paprika
+Paprika Sehat
+Bercak Kering Kentang
+Hawar Daun Kentang
+Kentang Sehat
+Raspberry Sehat
+Kedelai Sehat
+Embun Tepung Labu
+Scorch (terbakar/gosong) Stroberi
+Stroberi Sehat
+Bintik Bakteri Tomat
+Bercak Kering Tomat
+Hawar Daun Tomat
+Bercak Daun Tomat
+Bercak Daun Septoria Tomat
+Tungau Laba-Laba Tomat
+Bercak Daun (Target Spot) Tomat
+Virus Kuning Keriting Daun Tomat
+Virus Mosaik Tomat
+Tomat Sehat

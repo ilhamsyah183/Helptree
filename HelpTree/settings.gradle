@@ -1,0 +1,2 @@
+rootProject.name = "HelpTree"
+include ':app'
