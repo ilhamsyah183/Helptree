@@ -46,6 +46,8 @@
     <string name="icon">icon</string>
     <string name="type_a_message">Ketikkan Pesan Anda…</string>
     <string name="send">Kirim</string>
+    <string name="button">button</string>
+    <string name="samplemsg">This is a sample message that will appear</string>
 
     <string-array name="nama_dev">
         <item>M. Ilhamsyah (A3142813)</item>
