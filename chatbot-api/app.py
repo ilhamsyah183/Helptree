@@ -1,7 +1,7 @@
-from helper import *
+from engine import *
 import numpy as np
 
-#untuk API
+# untuk API
 from flask import Flask, render_template
 from flask_restful import reqparse, Api, Resource
 
@@ -13,47 +13,32 @@ parser = reqparse.RequestParser()
 parser.add_argument('query')
 
 
-class PredictIntent(Resource):   
+class Predict(Resource):
     def get(self):
         output = {}
-
         args = parser.parse_args()
         user_query = args['query']
 
-        results = think(user_query, True)
+        bot_response = response(user_query)
 
-        if results is not None:
-            results = [[i,r] for i,r in enumerate(results) if r > ERROR_THRESHOLD ] 
-            results.sort(key=lambda x: x[1], reverse=True) 
-            return_results =[[classes[r[0]],r[1]] for r in results]
-            intent_pred = return_results[0][0]
-            confidence = return_results[0][1]
+        if bot_response is not None:
+            output = {'user_query': user_query, 'bot_response': bot_response}
 
-            response = ''
-
-            if intent_pred == "rekomendasi_tanaman":
-                response = "Kami menyarankan kamu untuk menanam tanaman yang mudah dipelihara seperti kaktus"
-            if intent_pred == "selesai":
-                response = "Senang bisa membantu, semangat ya!"
-            if intent_pred == "salam_pembuka":
-                response = "Hai, ada yang bisa kami bantu?"
-
-            output = {'user_query': user_query, 'prediksi_intent': intent_pred, 'confidence': confidence, 'response': response}
-            
             return output
+
 
 # Setup the Api resource routing here
 # Route the URL to the resource
-api.add_resource(PredictIntent, '/bot')
+api.add_resource(Predict, '/chatbot')
 
 @app.route('/')
 def home():
     return render_template('home.html')
 
-@app.route('/run')
-def unduh_punkt():
-    nltk.download('punkt')
-    return 'Data NLTK punkt telah diunduh.'
+@app.route('/get-punkt')
+def get_punkt():
+	nltk.download('punkt')
+	return 'punkt berhasil didownload'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
