@@ -8,27 +8,23 @@ from flask_restful import reqparse, Api, Resource
 app = Flask(__name__)
 api = Api(app)
 
-# argument parsing
-parser = reqparse.RequestParser()
-parser.add_argument('query')
-
+#parsing argument
+parse = reqparse.RequestParser()
+parse.add_argument('query')
 
 class Predict(Resource):
     def get(self):
         output = {}
-        args = parser.parse_args()
+        args = parse.parse_args()
         user_query = args['query']
-
-        bot_response = response(user_query)
-
-        if bot_response is not None:
-            output = {'user_query': user_query, 'bot_response': bot_response}
+        responsebot = response(user_query)
+        if responsebot is not None:
+            output = {'user_query': user_query, 'bot_response': responsebot}
 
             return output
 
-
 # Setup the Api resource routing here
-# Route the URL to the resource
+# Route  URL to the resource
 api.add_resource(Predict, '/chatbot')
 
 @app.route('/')
