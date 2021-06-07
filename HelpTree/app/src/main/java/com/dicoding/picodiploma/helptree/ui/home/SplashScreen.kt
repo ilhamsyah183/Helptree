@@ -7,7 +7,7 @@ import android.os.Handler
 import com.dicoding.picodiploma.helptree.R
 
 class SplashScreen : AppCompatActivity() {
-    private val splashScreenTime: Long = 2000
+    private val splashScreenTime: Long = 1000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

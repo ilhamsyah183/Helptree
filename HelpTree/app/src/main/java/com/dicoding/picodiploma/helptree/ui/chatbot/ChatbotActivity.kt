@@ -52,13 +52,12 @@ class ChatbotActivity : AppCompatActivity() {
     }
 
     private fun sendMessageDisease(nameDisease: String) {
-        val message = nameDisease.toString()
         val timestamp = Time.timeStamp()
-        if(message.isNotEmpty()){
+        if (nameDisease.isNotEmpty()) {
             activityChatbotBinding?.etMessage?.setText("")
-            adapter.insertMessage(Message(message, SEND_ID, timestamp))
-            activityChatbotBinding?.rvMessages?.scrollToPosition(adapter.itemCount-1)
-            botResponse(message)
+            adapter.insertMessage(Message(nameDisease, SEND_ID, timestamp))
+            activityChatbotBinding?.rvMessages?.scrollToPosition(adapter.itemCount - 1)
+            botResponse(nameDisease)
         }
     }
 
@@ -125,7 +124,7 @@ class ChatbotActivity : AppCompatActivity() {
                         startActivity(intent)
                     }
                     BOT_HELPTREE->{
-                        val url = "http://35.192.216.146/chatbot?query=$message"
+                        val url = "http://35.226.62.181/chatbot?query=$message"
                         val client = AsyncHttpClient()
                         client.get(url, object: AsyncHttpResponseHandler(){
                             override fun onSuccess(statusCode: Int, headers: Array<Header>, responseBody: ByteArray) {
@@ -139,10 +138,16 @@ class ChatbotActivity : AppCompatActivity() {
                                     Log.d("Exception", e.message.toString())
                                 }
                             }
-                            override fun onFailure(statusCode: Int, headers: Array<Header>, responseBody: ByteArray, error: Throwable) {
-                                Log.d("onFailure", error.message.toString())
-                                botResponse("Error C01404")
-                                activityChatbotBinding?.rvMessages?.scrollToPosition(adapter.itemCount-1)
+                            override fun onFailure(statusCode: Int, headers: Array<out Header?>?, responseBody: ByteArray?, error: Throwable) {
+                                Log.d("onFailure adalah", error.message.toString())
+                                Log.d("Cause ", error.cause.toString())
+                                if(error.cause.toString().isEmpty() || error.message.toString().contains("timed out")){
+                                    botResponse("Error C01404")
+                                    activityChatbotBinding?.rvMessages?.scrollToPosition(adapter.itemCount-1)
+                                }else{
+                                    botResponse("Error C01405")
+                                    activityChatbotBinding?.rvMessages?.scrollToPosition(adapter.itemCount-1)
+                                }
                             }
                         })
                     }

@@ -1,7 +1,6 @@
 package com.dicoding.picodiploma.helptree.utils
 
 import android.util.Log
-import com.dicoding.picodiploma.helptree.ui.chatbot.ResponseHelper
 import com.dicoding.picodiploma.helptree.utils.Constants.BOT_HELPTREE
 import com.dicoding.picodiploma.helptree.utils.Constants.OPEN_GOOGLE
 import com.dicoding.picodiploma.helptree.utils.Constants.SEARCH_GOOGLE
