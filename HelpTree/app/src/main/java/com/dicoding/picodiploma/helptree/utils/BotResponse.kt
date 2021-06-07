@@ -1,18 +1,12 @@
 package com.dicoding.picodiploma.helptree.utils
 
-import android.util.Log
 import com.dicoding.picodiploma.helptree.utils.Constants.BOT_HELPTREE
 import com.dicoding.picodiploma.helptree.utils.Constants.OPEN_GOOGLE
 import com.dicoding.picodiploma.helptree.utils.Constants.SEARCH_GOOGLE
-import com.loopj.android.http.AsyncHttpClient
-import com.loopj.android.http.AsyncHttpResponseHandler
-import cz.msebera.android.httpclient.Header
-import org.json.JSONObject
 import java.util.*
 
 object BotResponse {
 
-    lateinit var akhir: String
     fun standarResponse(_message:String):String{
         val random = (0..2).random()
         val message = _message.toLowerCase(Locale.ROOT)
@@ -69,22 +63,4 @@ object BotResponse {
         }
     }
 
-    private fun getResponseFromApi(message:String){
-        val url = "https://arik.my.id/helptree/bot?query=$message"
-        val client = AsyncHttpClient()
-        client.get(url, object: AsyncHttpResponseHandler(){
-            override fun onSuccess(statusCode: Int, headers: Array<Header>, responseBody: ByteArray) {
-                try {
-                    val result = String(responseBody)
-                    val responseObject = JSONObject(result)
-                    akhir = responseObject.getString("response")
-                }catch (e: java.lang.Exception){
-                    Log.d("Exception", e.message.toString())
-                }
-            }
-            override fun onFailure(statusCode: Int, headers: Array<Header>, responseBody: ByteArray, error: Throwable) {
-                Log.d("onFailure", error.message.toString())
-            }
-        })
-    }
 }
